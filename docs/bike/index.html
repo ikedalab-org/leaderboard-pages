@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bike Sharing リーダーボード</title>
+<style>
+  .container { max-width: 480px; width: 860px; margin: 24px auto; font-family: system-ui, -apple-system, sans-serif; }
+  @media (max-width: 900px) { .container { width: 96%; max-width: 860px; } }
+  h1 { margin: 0 0 12px; }
+  .meta { color: #666; margin-bottom: 16px; }
+
+  table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+  col.rank  { width: 60px;  }
+  col.star  { width: 36px;  }
+  col.nick  { width: 200px; }   /* ← 表示名の幅。必要なら調整 */
+  col.score { width: 120px; }
+  col.ts    { width: 180px; }
+  col.src   { width: 220px; }
+
+  th, td { border-bottom: 1px solid #ddd; padding: 8px 10px; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  th { background: #fafafa; }
+  .right { text-align: right; font-variant-numeric: tabular-nums; }
+  .center { text-align: center; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bike Sharing リーダーボード</h1>
+    <div class="meta">エントリー数: 27 / 更新: 2026-04-03 14:00:04</div>
+    <table>
+
+      <colgroup>
+        <col class="rank"><col class="star"><col class="nick">
+        <col class="score"><col class="ts">
+      </colgroup>
+      <thead>
+        <tr>
+
+          <th style="width: 42px;">#</th>
+          <th style="width: 36px;">★</th>
+          <th>表示名</th>
+          <th class="right">スコア</th>
+          <th class="center">提出時刻</th>
+        </tr>
+      </thead>
+      <tbody>
+  <tr>
+    <td>1</td>
+    <td>★</td>
+    <td title="下田">下田</td>
+    <td class="right">560.1989</td>
+    <td class="center">2025-12-14 21:50</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td></td>
+    <td title="下田">下田</td>
+    <td class="right">585.8860</td>
+    <td class="center">2025-12-11 15:26</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>★</td>
+    <td title="山崎理桜">山崎理桜</td>
+    <td class="right">874.2930</td>
+    <td class="center">2025-10-21 18:50</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>★</td>
+    <td title="塩谷春馬">塩谷春馬</td>
+    <td class="right">959.0610</td>
+    <td class="center">2025-11-11 18:21</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>★</td>
+    <td title="石塚">石塚</td>
+    <td class="right">1085.6624</td>
+    <td class="center">2025-11-14 16:41</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>★</td>
+    <td title="佐藤輝幸">佐藤輝幸</td>
+    <td class="right">1345.3260</td>
+    <td class="center">2025-11-12 11:05</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td></td>
+    <td title="塩谷春馬">塩谷春馬</td>
+    <td class="right">1383.9150</td>
+    <td class="center">2025-11-05 10:46</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td></td>
+    <td title="下田">下田</td>
+    <td class="right">1531.5720</td>
+    <td class="center">2025-12-04 23:33</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td></td>
+    <td title="下田">下田</td>
+    <td class="right">1586.3590</td>
+    <td class="center">2025-12-01 15:03</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td></td>
+    <td title="山﨑理桜">山﨑理桜</td>
+    <td class="right">1620.3420</td>
+    <td class="center">2025-10-07 09:48</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td></td>
+    <td title="佐藤輝幸">佐藤輝幸</td>
+    <td class="right">1682.0070</td>
+    <td class="center">2025-11-05 12:54</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td></td>
+    <td title="佐藤輝幸">佐藤輝幸</td>
+    <td class="right">1693.3830</td>
+    <td class="center">2025-11-06 13:49</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td></td>
+    <td title="山崎理桜">山崎理桜</td>
+    <td class="right">1767.0091</td>
+    <td class="center">2025-09-18 14:22</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td></td>
+    <td title="下田">下田</td>
+    <td class="right">1927.2770</td>
+    <td class="center">2025-11-11 18:11</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td></td>
+    <td title="山﨑理桜">山﨑理桜</td>
+    <td class="right">2079.5028</td>
+    <td class="center">2025-09-16 10:43</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td></td>
+    <td title="山﨑理桜">山﨑理桜</td>
+    <td class="right">2099.5972</td>
+    <td class="center">2025-09-18 13:52</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td></td>
+    <td title="山崎理桜">山崎理桜</td>
+    <td class="right">2136.0156</td>
+    <td class="center">2025-09-18 13:19</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td></td>
+    <td title="佐藤輝幸">佐藤輝幸</td>
+    <td class="right">2211.0980</td>
+    <td class="center">2025-11-04 16:24</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>★</td>
+    <td title="上仲遥貴">上仲遥貴</td>
+    <td class="right">2233.2520</td>
+    <td class="center">2025-09-18 20:32</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td></td>
+    <td title="佐藤輝幸">佐藤輝幸</td>
+    <td class="right">2284.4160</td>
+    <td class="center">2025-11-04 15:47</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>★</td>
+    <td title="藤原悠暉">藤原悠暉</td>
+    <td class="right">2326.3810</td>
+    <td class="center">2025-09-18 23:01</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>★</td>
+    <td title="末金昂樹">末金昂樹</td>
+    <td class="right">2359.6380</td>
+    <td class="center">2025-09-17 20:10</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>★</td>
+    <td title="NGUYENKIMHOANG">NGUYENKIMHOANG</td>
+    <td class="right">2455.0000</td>
+    <td class="center">2025-10-02 12:21</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td></td>
+    <td title="末金昂樹">末金昂樹</td>
+    <td class="right">2455.3410</td>
+    <td class="center">2025-09-17 20:01</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td></td>
+    <td title="上仲遥貴">上仲遥貴</td>
+    <td class="right">2455.3410</td>
+    <td class="center">2025-10-13 19:48</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td></td>
+    <td title="佐藤輝幸">佐藤輝幸</td>
+    <td class="right">2455.3410</td>
+    <td class="center">2025-10-30 14:44</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td></td>
+    <td title="塩谷春馬">塩谷春馬</td>
+    <td class="right">2455.3410</td>
+    <td class="center">2025-10-30 15:36</td>
+  </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
