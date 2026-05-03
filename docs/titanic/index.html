@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="refresh" content="60">
   <title>Titanic リーダーボード</title>
 <style>
   .container { max-width: 480px; width: 860px; margin: 24px auto; font-family: system-ui, -apple-system, sans-serif; }
@@ -12,7 +13,7 @@
   table { border-collapse: collapse; width: 100%; table-layout: fixed; }
   col.rank  { width: 60px;  }
   col.star  { width: 36px;  }
-  col.nick  { width: 160px; }  /* ← 名前の列幅を広めに（必要なら 280 などに） */
+  col.nick  { width: 200px; }   /* ← 表示名の幅。必要なら調整 */
   col.score { width: 120px; }
   col.ts    { width: 180px; }
   col.src   { width: 220px; }
@@ -20,16 +21,18 @@
   th, td { border-bottom: 1px solid #ddd; padding: 8px 10px; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   th { background: #fafafa; }
   .right { text-align: right; font-variant-numeric: tabular-nums; }
+  .center { text-align: center; }
 </style>
 </head>
 <body>
   <div class="container">
     <h1>Titanic リーダーボード</h1>
-    <div class="meta">エントリー数: 2 / 更新: 2025-12-04 13:44:37</div>
+    <div class="meta">エントリー数: 3 / 更新: 2026-05-03 18:50:43</div>
     <table>
 
       <colgroup>
-        <col class="rank"><col class="star"><col class="nick"><col class="score"><col class="ts">
+        <col class="rank"><col class="star"><col class="nick">
+        <col class="score"><col class="score"><col class="ts">
       </colgroup>
       <thead>
         <tr>
@@ -37,9 +40,9 @@
           <th style="width: 42px;">#</th>
           <th style="width: 36px;">★</th>
           <th>表示名</th>
-          <th>スコア</th>
-          <th>提出時刻</th>
-    
+          <th class="right">申告スコア</th>
+          <th class="right">評価スコア</th>
+          <th class="center">提出時刻</th>
         </tr>
       </thead>
       <tbody>
@@ -47,15 +50,25 @@
     <td>1</td>
     <td>★</td>
     <td title="23610239">23610239</td>
-    <td class="right">0.874</td>
-    <td>2025-11-26 09:38</td>
+    <td class="right">0.8735</td>
+    <td class="right">ID不一致</td>
+    <td class="center">2025-11-26 09:38</td>
   </tr>
   <tr>
     <td>2</td>
     <td>★</td>
     <td title="NGUYEN KIM HOANG">NGUYEN KIM HOANG</td>
-    <td class="right">0.811</td>
-    <td>2025-10-10 14:04</td>
+    <td class="right">0.8112</td>
+    <td class="right">列不正</td>
+    <td class="center">2025-10-10 14:04</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>★</td>
+    <td title="佐藤輝幸">佐藤輝幸</td>
+    <td class="right">0.8112</td>
+    <td class="right">ID不一致</td>
+    <td class="center">2025-12-23 13:47</td>
   </tr>
       </tbody>
     </table>
