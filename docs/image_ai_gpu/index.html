@@ -82,21 +82,59 @@
 <body>
   <div class="container">
     <h1>画像AIとGPU：3分以内チャレンジ リーダーボード</h1>
-    <div class="meta">Updated: 2026-07-23 15:12:04 / timezone: Asia/Tokyo</div>
+    <div class="meta">Updated: 2026-07-23 15:22:04 / timezone: Asia/Tokyo</div>
 
     <div class="summary">
       <div>対象：第16回フォームで「参加する」を選び、掲載可になっている提出</div>
       <div>条件：学習時間 180 秒以内、test accuracy は 0〜1 の範囲</div>
-      <div>掲載件数：0 / 回答行数：0</div>
+      <div>掲載件数：1 / 回答行数：1</div>
     </div>
 
     <h2>Accuracy部門</h2>
     <p class="small">test accuracy が高い順。同率の場合は学習時間が短い方を上位にしています。</p>
-    <div class="empty">まだ掲載対象の記録がありません。</div>
+    
+<table>
+  <thead><tr><th>Rank</th><th>表示名</th><th>Accuracy</th><th>学習時間</th><th>Device</th><th>Batch</th><th>Epoch</th><th>Optimizer</th><th>LR</th><th>工夫</th></tr></thead>
+  <tbody>
+    
+<tr>
+  <td class="rank">1</td>
+  <td>深川</td>
+  <td class="num">91.70%</td>
+  <td class="num">20.6 秒</td>
+  <td>GPU</td>
+  <td class="num"></td>
+  <td class="num"></td>
+  <td></td>
+  <td class="num"></td>
+  <td class="note">畳み込み層のチャンネルを32/64 から64/128に増やしました dropoutの割合を調整することで過学習を防ぐよう工夫をしました</td>
+</tr>
+  </tbody>
+</table>
+
 
     <h2>Efficiency部門</h2>
     <p class="small">test accuracy が 90% 以上の記録の中で、学習時間が短い順。同率の場合はaccuracyが高い方を上位にしています。</p>
-    <div class="empty">まだ掲載対象の記録がありません。</div>
+    
+<table>
+  <thead><tr><th>Rank</th><th>表示名</th><th>学習時間</th><th>Accuracy</th><th>Device</th><th>Batch</th><th>Epoch</th><th>Optimizer</th><th>LR</th><th>工夫</th></tr></thead>
+  <tbody>
+    
+<tr>
+  <td class="rank">1</td>
+  <td>深川</td>
+  <td class="num">20.6 秒</td>
+  <td class="num">91.70%</td>
+  <td>GPU</td>
+  <td class="num"></td>
+  <td class="num"></td>
+  <td></td>
+  <td class="num"></td>
+  <td class="note">畳み込み層のチャンネルを32/64 から64/128に増やしました dropoutの割合を調整することで過学習を防ぐよう工夫をしました</td>
+</tr>
+  </tbody>
+</table>
+
 
     <p class="small">
       申告値と提出Notebookが一致しない場合、または条件違反が確認された場合は掲載から除外します。
